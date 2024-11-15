@@ -1,0 +1,75 @@
+
+    Parte 1: Exploración y Gestión de Procesos
+
+a) Ventajas y desventajas de la ejecución síncrona vs asíncrona:
+Síncrona:
+
+    Ventaja: Más fácil de entender y depurar.
+    Desventaja: Puede bloquear la ejecución del programa principal.
+    Asíncrona:
+    Ventaja: Permite realizar múltiples tareas simultáneamente.
+    Desventaja: Más compleja de implementar y manejar.
+
+b) Importancia de manejar excepciones al trabajar con procesos:
+
+    Previene fallos inesperados del programa.
+    Permite manejar situaciones como acceso denegado a ciertos procesos.
+    Mejora la robustez y confiabilidad del software.
+
+c) Problemas en la comunicación entre procesos y soluciones:
+
+    Problema: Condiciones de carrera.
+    Solución: Usar mecanismos de sincronización como semáforos o mutex.
+    Problema: Deadlocks.
+    Solución: Implementar técnicas de detección y prevención de deadlocks.
+
+   Parte 2: Comunicación Interprocesos con Pipes
+
+a) Ventajas y desventajas de la ejecución síncrona vs asíncrona:
+(Similar a la respuesta anterior, pero enfocado en la comunicación entre procesos) 
+
+b) Importancia de manejar excepciones:
+
+    Evita bloqueos en la comunicación entre procesos.
+    Permite manejar errores de lectura/escritura en pipes.
+
+c) Problemas en la comunicación entre procesos y soluciones:
+
+    Problema: Bloqueo en lectura/escritura de pipes.
+    Solución: Usar pipes no bloqueantes o implementar timeouts.
+    Problema: Sincronización en el intercambio de mensajes.
+    Solución: Implementar protocolos de comunicación claros entre procesos.
+
+    Parte 3: Ejecución de Programas Síncrona y Asíncrona
+
+a) Ventajas y desventajas:
+(Similar a las respuestas anteriores, pero enfocado en la ejecución de programas externos) 
+
+b) Importancia de manejar excepciones:
+
+    Permite manejar errores en la ejecución de programas externos.
+    Mejora la capacidad de recuperación ante fallos.
+
+c) Problemas y soluciones:
+
+    Problema: Programas que no responden.
+    Solución: Implementar timeouts en la ejecución.
+    Problema: Gestión de recursos en ejecución asíncrona.
+    Solución: Usar pools de procesos o hilos para limitar la concurrencia.
+
+    Parte 4: Transferencia de Datos y Manipulación del Portapapeles
+
+a) Ventajas y desventajas de la ejecución síncrona vs asíncrona:
+(Similar a las respuestas anteriores, enfocado en transferencia de datos y manipulación del portapapeles) 
+
+b) Importancia de manejar excepciones:
+
+    Permite manejar errores de conexión FTP y acceso al portapapeles.
+    Mejora la robustez en operaciones de red y sistema.
+
+c) Problemas y soluciones:
+
+    Problema: Cambios concurrentes en el portapapeles.
+    Solución: Implementar mecanismos de bloqueo o versiones para el acceso al portapapeles.
+    Problema: Fallos en la conexión FTP.
+    Solución: Implementar reintentos y manejo de errores de red.
